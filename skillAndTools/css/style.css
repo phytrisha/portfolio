@@ -1,0 +1,11 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #000
+}
+
+.centerContainer {
+	width: 600px;
+	height: 600px;
+	margin: auto;
+}

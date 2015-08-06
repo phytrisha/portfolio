@@ -1,0 +1,15 @@
+tools
+[1]	Photoshop
+[2]	Illustrator
+[3]	InDesign
+[4]	After Effects
+[5]	Premiere Pro
+[6]	Sketch
+[7]	Maya
+[8]	Cinema4D
+[9]	C#
+[10]	JavaScript
+[11]	HTML/CSS
+[12]	Processing
+
+skills from “None” (=50) to “Expert” (=300)

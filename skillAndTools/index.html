@@ -1,8 +1,47 @@
-<<html>
+<!DOCTYPE html>
+<html>
 	<head>
-		
+		<meta charset="UTF-8">
+    	<title>skills</title>
+    	<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		
+		<div class="centerContainer">
+			<canvas id="myCanvas" width="600" height="600">
+			</canvas>			
+		</div>
+
+		<script type="text/javascript">
+			var c = document.getElementById("myCanvas");
+			var cxt = c.getContext("2d");
+			var skills = [300, 100, 150, 250, 100, 200, 250, 150, 200, 250, 250, 200];
+			var numberOfSides = 12,
+			    size = 300,
+			    Xcenter = 300,
+			    Ycenter = 300;
+			for (var i = 0; i < 6; i++) {
+				size = size - i*50;
+				cxt.beginPath();
+				cxt.moveTo (Xcenter +  size * Math.cos(0), Ycenter +  size *  Math.sin(0));          
+
+				for (var j = 1; j <= numberOfSides;j += 1) {
+				    cxt.lineTo (Xcenter + size * Math.cos(j * 2 * Math.PI / numberOfSides), Ycenter + size * Math.sin(j * 2 * Math.PI / numberOfSides));
+				}
+
+				cxt.strokeStyle = "#ffffff";
+				cxt.lineWidth = 1;
+				cxt.stroke();
+				size = 300;
+			};
+			cxt.beginPath();
+			cxt.moveTo (Xcenter +  skills[0] * Math.cos(0), Ycenter +  skills[0] *  Math.sin(0));          
+			for (var k=1; k<= numberOfSides; k+=1) {
+				cxt.lineTo (Xcenter + skills[k] * Math.cos(k*2*Math.PI/numberOfSides), Ycenter + skills[k] * Math.sin(k*2*Math.PI/numberOfSides));
+			}
+			cxt.closePath();
+			cxt.fillStyle = "rgba(255,0,0,0.5)";
+			cxt.fill();
+			
+		</script>
 	</body>
 </html>
