@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+		<title>Mark - Gestaltung</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src='js/jquery.min.js'></script>
+		<script src="js/scrollspy.js"></script>
+	</head>
+	<body data-spy="scroll" data-target="#mainNavbar">
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="navBullets"  id="mainNavbar">
+				<ul class="navList nav nav-tabs" role="tablist">
+					<li class="navBullet" id="navFocus">
+						<a href="#focus"><span class="navTypo">Focus</span></a>
+					</li>
+					<li class="navBullet" id="navExperience">
+						<a href="#experience"><span class="navTypo">Experience</span></a>
+					</li>
+					<li class="navBullet" id="navProjects">
+						<a href="#projects"><span class="navTypo">Projects</span></a>
+					</li>
+					<li class="navBullet" id="navContact">
+						<a href="#contact"><span class="navTypo">Contact</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<script type="text/javascript">
+		$('body').scrollspy({ target: '#mainNavbar' })
+		
+		</script>
+
+		<div class="mainContent">
+			<div class="content" id="focus">
+				<div class="contentHeader">
+					<h1>Hi, I'm <b>Mark</b> and I'm an interaction designer.</br>These are the things that matter most to me:</h1>
+				</div>
+				<div class="focusPoints">
+					<div class="focusPoint">
+						<div class="focusImage" id="focusImageStructure"></div>
+						<div class="focusTitle"><h2>Structure</h2></div>
+						<div class="focusDescription">
+							<p>Key to all good applications or</br>interfaces is a flawless structure</p>
+						</div>
+					</div>
+					<div class="focusPoint">
+						<div class="focusImage" id="focusImageFocus"></div>
+						<div class="focusTitle"><h2>Focus</h2></div>
+						<div class="focusDescription">
+							<p>The user is the only thing that</br>should matter. It is extremely</br>important to focus on that guy.</p>
+						</div>
+					</div>
+					<div class="focusPoint">
+						<div class="focusImage" id="focusImagePrecision"></div>
+						<div class="focusTitle"><h2>Precision</h2></div>
+						<div class="focusDescription">
+							<p>This is a description text. The</br>text could be up to three lines.</br>But thats all the space there is.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="experience">
+				<div class="contentHeader">
+					<h1>These are the places I was already able to learn</br>and gather experience:</h1>
+				</div>
+				<div class="cvComplete">
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine1"></div>
+					</div>
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine2"></div>
+					</div>
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine3"></div>
+					</div>
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine4"></div>
+					</div>
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine5"></div>
+					</div>
+					<div class="cvRow">
+						<div class="cvLine" id="cvLine6"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="projects">
+				<div class="contentHeader">
+					<h1>Among others, I have worked on the following projects:</h1>
+				</div>
+				<div class="projectsComplete">
+					<a href="projects/terra.html">
+						<div class="projectFrame">
+							<div class="project">
+								<div class="projectImage" id="projectImageTerra"></div>
+								<span class="projectTitle">
+									<h3>Terra</h3>
+								</span>
+							</div>
+						</div>
+					</a>
+					
+					<div class="projectFrame">
+						<div class="project">
+							<div class="projectImage" id="projectImageBooklooker"></div>
+							<span class="projectTitle">
+								<h3>Booklooker</h3>
+							</span>
+						</div>
+					</div>
+					<div class="projectFrame">
+						<div class="project">
+							<div class="projectImage" id="projectImageInstrumentCluster"></div>
+							<span class="projectTitle">
+								<h3>Instrument Cluster</h3>
+							</span>
+						</div>
+					</div>
+					<div class="projectFrame" id="projectFrame2ndRow">
+						<div class="project">
+							<div class="projectImage" id="projectImageOmni"></div>
+							<span class="projectTitle">
+								<h3>omni</h3>
+							</span>
+						</div>
+					</div>
+					<div class="projectFrame">
+						<div class="project">
+							<div class="projectImage" id="projectImageTrinity"></div>
+							<span class="projectTitle">
+								<h3>Trinity</h3>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="contact">
+				<div class="contentHeader">
+					<h1>Did I wake your attention?</br>Get in touch!</h1>
+				</div>
+				<div class="contactSpace">
+					<ul class="contactList">
+						<li class="contactBullet">
+							<a href="http://phytrisha.tumblr.com">
+								<div class="contactIcons" id="contactTumblr"></div>
+							</a>
+						</li>
+						<li class="contactBullet">
+							<a href="mailto:markf.meyer@icloud.com">
+								<div class="contactIcons" id="contactMail"></div>
+							</a>
+						</li>
+						<li class="contactBullet">
+							<a href="https://github.com/phytrisha">
+								<div class="contactIcons" id="contactGithub"></div>
+							</a>	
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('a[href^=#]').on('click', function(e){
+				var href = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop:($(href).offset().top-120)
+				},450);
+				e.preventDefault();
+			});
+		</script>
+		<script type="text/javascript">
+			$(window).bind('mousewheel', function(event) {
+				var scroll = $(window).scrollTop();
+			});
+		</script>
+	</body>
+</html>
