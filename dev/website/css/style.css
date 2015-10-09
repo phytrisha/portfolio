@@ -129,6 +129,17 @@ a {
 
 /* --------------- MAINCONTENT START --------------- */
 
+.heroImage {
+	height: 360px;
+	width: 100px;
+	margin-top: 160px;
+}
+
+.parallax-window {
+    min-height: 540px;
+    background: transparent;
+}
+
 .mainContent {
 	width: 960px;
 	margin: auto;

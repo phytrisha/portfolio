@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src='js/jquery.min.js'></script>
 		<script src="js/scrollspy.js"></script>
+		<script src="js/parallax.js"></script>
 	</head>
 	<body data-spy="scroll" data-target="#mainNavbar">
 
@@ -33,11 +34,18 @@
 		</nav>
 
 		<script type="text/javascript">
-		$('body').scrollspy({ target: '#mainNavbar' })
-		
+			$('body').scrollspy({ target: '#mainNavbar' })
 		</script>
 
 		<div class="mainContent">
+			<!--<div class="content">
+				<div class="heroImage"></div>
+			</div>-->
+
+				<div class="parallax-window" data-parallax="scroll" data-image-src="img/heroImage.jpg" data-natural-width="960" data-natural-height="540"></div>
+
+
+
 			<div class="content" id="focus">
 				<div class="contentHeader">
 					<h1>Hi, I'm <b>Mark</b> and I'm an interaction designer.</br>These are the things that matter most to me:</h1>
