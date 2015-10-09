@@ -15,6 +15,9 @@
 			var c = document.getElementById("myCanvas");
 			var cxt = c.getContext("2d");
 			var skills = [300, 100, 150, 250, 100, 200, 250, 150, 200, 250, 250, 200];
+			for (var i = skills.length - 1; i >= 0; i--) {
+				skills[i] = skills[i] - 10;
+			};
 			var numberOfSides = 12,
 			    size = 300,
 			    Xcenter = 300,
@@ -39,8 +42,9 @@
 				cxt.lineTo (Xcenter + skills[k] * Math.cos(k*2*Math.PI/numberOfSides), Ycenter + skills[k] * Math.sin(k*2*Math.PI/numberOfSides));
 			}
 			cxt.closePath();
-			cxt.fillStyle = "rgba(255,0,0,0.5)";
-			cxt.fill();
+			cxt.strokeStyle = "rgba(255,0,0,1.0)";
+			cxt.lineWidth = 2;
+			cxt.stroke();
 			
 		</script>
 	</body>
