@@ -13,20 +13,15 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="projectNavBullets">
-				<a href="../index.html#projects">
-					<div class="projectNavBullet">Back</div>
-				</a>
-				<div class="projectNavBullet" id="navOther">
-					<a href="../index.html#projects">Other Projects</a>
-					<ul class="dropdown">
-						<a href="booklooker.html"><li>Booklooker</li></a>
-						<a href="instrumentCluster.html"><li>Instrument Cluster</li></a>
-						<a href="omni.html"><li>Omni</li></a>
-						<a href="trinity.html"><li>Trinity</li></a>
-					</ul>
-
-				</div>
+			<div class="navBullets"  id="projectNavbar">
+				<ul class="navList nav nav-tabs" role="tablist">
+					<li class="navBullet" id="projectNavBack">
+						<a href="../index.html#projects"><span class="navTypo">Back</span></a>
+					</li>
+					<li class="navBullet" id="projectNavOther">
+						<a href="../index.html#projects"><span class="navTypo">Other Projects</span></a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 
@@ -38,15 +33,32 @@
 				<h1>Terra - Interactive Communicationsystem</h1>
 			</div>
 			<div class="projectDescriptionBlock">
-				<span class="projectDescriptionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+				<span class="projectDescriptionText">Terra is an interactive communication system, designed to provide information to a specific topic. It was built in the second semester of my interaction design studies at University of Design in Schwäbisch Gmünd in cooperation with Nico Göckeritz, Bernadette Krehbiehl and lecturer Roger Walk. The basic concept can be applied to any topic, but in our case we chose the rainforest as an example. Terra is a concept for a museum or an exhibition, not for usage at home, due to it’s demand for a large space.</br></br>The core and most fundamental idea of terra is navigating through layers of information, each providing more in depth data. The idea of controlling the system via gestures was born rather quickly, though the choice of technology was not clear yet. First thoughts involved systems such as Leap Motion or Xbox Kinect, but they did not fully fit our needs. Leap Motion was canceled because of the small space the can only be used for tracking. Xbox Kinect, while providing us with the amount of space we needed for this project, was not able to detect detailed gestures. Further research and advisement from our lecturer Roger Walk led us to Thalmic Labs Myo, an armband, able to track not only rotation of the arm it is worn on, but can also provide detailed information about current finger position via electronic signals, that are transferred through the arm, and even interpret these signals to basic gestures, such as “Fist” or “Fingers spread”</br></br>We used these gestures as the most basic controls to enable the user to easily jump from one layer into the next by forming a fist and to return to the above layer by spreading his fingers. These are the most basic interactions the user can perform. The three layers the user can access are mapped to the information architecture we had previously created to cover all aspects of our topic, the rainforest. The first layer shows an abstract globe, which the user can rotate by rotating his arm. As he rotates, the according rainforest is highlighted, to indicate a possible interaction.</span>
 			</div>
 			<div class="projectDescriptionImage" id="projectImageTerra1"></div>
 			<div class="projectDescriptionBlock">
-				<span class="projectDescriptionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+				<span class="projectDescriptionText">The second layer offers an immersive experience to the user, placing him in the middle of an abstract, stylised rainforest. Here he can look around, again by rotating his arm. In all layers the arm rotation is multiplied by 2 in the horizontal axis, to enable the user to cover a 360 degrees viewing angle. In this layer, he can further interact with flora and fauna. If he does so, the element is taken into an abstract world, where he can now not only analyse the chosen element in detail, but also interact with statistics or image galleries. These interactions required more specific gestures, so we introduced the ability to swipe left and right, while keeping the core gestures of making a fist and spreading your fingers to create a highly consistent and easy to learn system.</span>
 			</div>
 			<div class="projectDescriptionImage" id="projectImageTerra2"></div>
 			<div class="projectDescriptionBlock">
-				<span class="projectDescriptionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+				<span class="projectDescriptionText">We developed a prototype of this system using the Unity engine, in combination with the framework provided by Thalmic Labs to quickly and easily access data from the Myo. Code was written in C#, the 3D-models were created in Autodesk Maya and Photoshop. Terra was featured on the official Thalmic Labs developer blog: <a href="http://developerblog.myo.com/featured-developer-terra/">Featured Developer: Terra</a></span>
+			</div>
+		</div>
+		<div class="projectFactsBlock">
+			<div class="projectFact">
+				<div class="projectFactIcon" id="projectFactTime"></div>
+				<div class="projectFactTypo header">Time</div>
+				<div class="projectFactTypo paragraph">Second semester</br>October 2014 - Febuary 2015</div>
+			</div>
+			<div class="projectFact">
+				<div class="projectFactIcon" id="projectFactType"></div>
+				<div class="projectFactTypo header">Type</div>
+				<div class="projectFactTypo paragraph">Interactive communication systems course with <a href="http://www.uvwxyz.com/start.html">Roger Walk</a></div>
+			</div>
+			<div class="projectFact last">
+				<div class="projectFactIcon" id="projectFactTeam"></div>
+				<div class="projectFactTypo header">Team</div>
+				<div class="projectFactTypo paragraph">Mark Meyer</br>Nico Göckeritz</br>Bernadette Krehbiehl</div>
 			</div>
 		</div>
 	</body>

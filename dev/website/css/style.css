@@ -48,6 +48,12 @@ p {
 
 a {
 	text-decoration: inherit;
+	color: #2d3940;
+}
+
+.projectFactTypo > a,
+.projectDescriptionText > a {
+	color: #ff6b00;
 }
 
 /* --------------- TYPOGRAPHY END --------------- */
@@ -118,49 +124,6 @@ a {
 
 .projectNavBullet:hover {
 	color: #ff6b00;
-}
-
-ul.dropdown {
-	min-width: 125px;
-	background-color: #fff;
-	z-index: 1040;
-	position: absolute;
-	color: #fff;
-	float: right;
-	list-style: none;
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	-webkit-padding-start: 0px;
-	margin-left: -38px;
-	border-radius: 4px;
-	border-style: solid;
-	border-color: #ff6b00;
-	border-width: 1px;
-	padding: 10px;
-	display: none;
-}
-
-ul.dropdown li {
-	text-align: right;
-	font-family: "Museo Slab";
-	font-size: 1.2em;
-	font-weight: 500;
-	color: #2d3940;
-	line-height: 30px;
-	-webkit-transition: all ease-out 0.1s;
-    -moz-transition: all ease-out 0.1s;
-    -o-transition: all ease-out 0.1s;
-    transition: all ease-out 0.1s;
-}
-
-ul.dropdown li:hover {
-	color: #ff6b00;
-}
-
-.projectNavBullet:hover ul.dropdown {
-	display: block;
 }
 
 #navOther {
@@ -477,8 +440,79 @@ ul.dropdown li:hover {
 }
 
 
+.projectFactsBlock {
+	width: 640px;
+	height: 240px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.projectFact {
+	width: 160px;
+	height: 100%;
+	float: left;
+	margin-right: 80px;
+}
 
+.projectFact.last {
+	margin-right: 0px;
+}
+
+.projectFactIcon {
+	width: 80px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+	background-size: 100%;
+}
+
+.projectFactTypo {
+	font-size: 1.0em;
+	font-weight: 500;
+	color: #2d3940;
+	text-align: center;
+}
+
+.projectFactTypo.paragraph {
+	margin-top: 12px;
+	font-family: "Museo Sans";
+}
+
+.projectFactTypo.header {
+	font-family: "Museo Slab";
+	font-size: 1.4em;
+	text-align: center;
+}
+
+#projectFactTime {
+	background-image: url(../img/projectIcon-01.png);
+}
+
+#projectFactType {
+	background-image: url(../img/projectIcon-03.png);
+}
+
+#projectFactTeam {
+	background-image: url(../img/projectIcon-02.png);
+}
+
+#projectNavHeader {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#projectNavbar {
+	width: 960px;
+}
+
+#projectNavBack {
+	float: left;
+}
+
+#projectNavOther {
+	float: right;
+}
 
 
 
